@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="invitation">
+    <h1>You're Invited!</h1>
+    <!-- This greeting will be updated with the guest's name -->
+    <p id="greeting">Hello Guest,</p>
+    <p>Join us for the wedding of</p>
+    <h2>HENG Menghak &amp; POV Srey Norng</h2>
+    <p>📅 Date: December 26 2026</p>
+    <p>📍 Location: Premier Sensok </p>
+    <p>✨ We can't wait to celebrate with you! ✨</p>
+    <button>RSVP Now</button>
+  </div>
+
+  <!-- JavaScript to update the guest's name -->
+  <script>
+    // Function to extract query parameters from the URL
+    function getQueryParam(param) {
+      let urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+  
+    // Retrieve the 'guest' parameter from the URL
+    const guestName = getQueryParam('guest');
+  
+    // If a guest name is provided, update the greeting
+    if (guestName) {
+      document.getElementById('greeting').innerText = "Hello " + decodeURIComponent(guestName) + ",";
+    }
+  </script>
+</body>
+</html>

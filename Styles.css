@@ -1,0 +1,72 @@
+/* Wedding Invitation Styling */
+body {
+  font-family: 'Playfair Display', serif;  /* Elegant font */
+  background-color: #f8f3e7;  /* Soft beige */
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+
+/* Card-style invitation */
+.invitation {
+  background: rgb(227, 199, 199);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  border: 2px solid #d4a373;  /* Elegant gold border */
+}
+
+/* Title Styling */
+h1 {
+  font-size: 28px;
+  color: #b27941;  /* Gold color */
+  margin-bottom: 10px;
+}
+
+/* Couple's Name */
+h2 {
+  font-size: 28px;
+  color: #8b5e34;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Guest Greeting */
+#greeting {
+  font-size: 22px;
+  font-style: italic;
+  color: #5a3e2b;
+  margin-bottom: 15px;
+}
+
+/* Date & Location */
+p {
+  font-size: 18px;
+  color: #444;
+  margin: 8px 0;
+}
+
+/* RSVP Button */
+button {
+  background-color: #b27941;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+body {
+  font-family: 'Playfair Display', serif;
+  background-image: url('floral-background.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background static */
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
